@@ -1,4 +1,23 @@
 console.log("testing...")
+const startButton = document.getElementById('start-btn')
+startButton.addEventListener('click', startGame)
+
+function startGame() {
+  console.log('Started')
+}
+
+function setNextQuestion() {
+
+}
+
+
+function selectAnswer() {
+
+}
+
+
+
+
 
 // test that we can get data from the backend
 
