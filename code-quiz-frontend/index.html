@@ -7,7 +7,15 @@
   </head>
   <body>
     <div class="container">
-      <div id="question-container" class="hide">
+      <div id="signin">
+        <form class="form" id="myForm" action="http://localhost:3000/users" method="post">
+          <div class="sign-in">Sign In</div>
+          <input type="text" name="user[name]" id="user-name" placeholder="Name" required="required">
+          <input type="text" name="user[email]" id="user-email" placeholder="Email" required="required">
+          <input class="submit" type="submit">
+        </form>
+      </div>
+      <div id="question-container" class="hide" >
           <div id="question">Question</div>
           <div id="answer-buttons" class="btn-grid">
             <button class="btn">Answer 1</button>
@@ -17,7 +25,7 @@
           </div>
       </div>
         <div class="controls">
-          <button id="start-btn" class="start-btn btn">Start</button>
+          <button id="start-btn" class="start-btn btn hide">Start</button>
           <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
