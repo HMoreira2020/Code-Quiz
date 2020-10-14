@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 
     def create
         user = User.create(name: params[:user][:name], email: params[:user][:email])
-        session[:id] = user.id
         render json: user
     end 
 end
